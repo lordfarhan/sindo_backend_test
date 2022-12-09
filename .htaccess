@@ -1,0 +1,7 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^users/?$ users.php [NC,L]
+RewriteRule ^users/([0-9]+)/?$ users.php?id=$1 [NC,L]
+RewriteRule ^products/?$ products.php [NC,L]
+RewriteRule ^products/([0-9]+)/?$ products.php?id=$1 [NC,L]
+RewriteRule ^transfers/?$ transfers.php [NC,L]
+RewriteRule ^transfers/([0-9]+)/?$ transfers.php?id=$1 [NC,L]
